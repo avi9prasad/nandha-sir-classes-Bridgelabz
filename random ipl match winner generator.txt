@@ -1,0 +1,126 @@
+#! /bin/bash -x
+season=2020
+randomNumber=$((RANDOM%8+1))
+MATCH_PLAYED=14
+firstTeam=1
+secondTeam=2
+thirdTeam=3
+fourthTeam=4
+fifthTeam=5
+sixthTeam=6
+seventhTeam=7
+eightTeam=8
+win=0
+lose=0
+teamName=""
+points=0
+MULTIPLY_BY_TWO=2
+case $randomNumber in
+   $firstTeam)
+      teamName="Mumbai Indians"
+      win=9
+      lose=5
+      runRate="+1.107"
+      points=$((win*MULTIPLY_BY_TWO))
+      echo "Indian Premier League $season"
+      echo "Team Name : $teamName"
+      echo "Match Played : $MATCH_PLAYED"
+      echo "Win : $win & Lose : $lose"
+      echo "NRR : $runRate"
+      echo "Points : $points"
+      ;;
+   $secondTeam)
+      teamName="Delhi Capitals"
+      win=8
+      lose=6
+      runRate="-1.109"
+      points=$((win*MULTIPLY_BY_TWO))
+      echo "Indian Premier League $season"
+      echo "Team Name : $teamName"
+      echo "Match Played : $MATCH_PLAYED"
+      echo "Win : $win & Lose : $lose"
+      echo "NRR : $runRate"
+      echo "Points : $points"
+      ;;
+   $thirdTeam)
+      teamName="Sunrishers Hyderabad"
+      win=7
+      lose=7
+      runRate="+0.608"
+      points=$((win*MULTIPLY_BY_TWO))
+      echo "Indian Premier League $season"
+      echo "Team Name : $teamName"
+      echo "Match Played : $MATCH_PLAYED"
+      echo "Win : $win & Lose : $lose"
+      echo "NRR : $runRate"
+      echo "Points : $points"
+      ;;
+   $fourthTeam)
+      teamName="Royal Challengers Of Bengaluru"
+      win=7
+      lose=7
+      runRate="-0.172"
+      points=$((win*MULTIPLY_BY_TWO))
+      echo "Indian Premier League $season"
+      echo "Team Name : $teamName"
+      echo "Match Played : $MATCH_PLAYED"
+      echo "Win : $win & Lose : $lose"
+      echo "NRR : $runRate"
+      echo "Points : $points"
+      ;;
+   $fifthTeam)
+      teamName="Kolkatta Knight Riders"
+      win=7
+      lose=7
+      runRate="-0.214"
+      points=$((win*MULTIPLY_BY_TWO))
+      echo "Indian Premier League $season"
+      echo "Team Name : $teamName"
+      echo "Match Played : $MATCH_PLAYED"
+      echo "Win : $win & Lose : $lose"
+      echo "NRR : $runRate"
+      echo "Points : $points"
+      ;;
+   $sixthTeam)
+      teamName="Kings X! Punjab"
+      win=6
+      lose=8
+      runRate="-0.162"
+      points=$((win*MULTIPLY_BY_TWO))
+      echo "Indian Premier League $season"
+      echo "Team Name : $teamName"
+      echo "Match Played : $MATCH_PLAYED"
+      echo "Win : $win & Lose : $lose"
+      echo "NRR : $runRate"
+      echo "Points : $points"
+      ;;
+   $seventhTeam)
+      teamName="Chennai Super Kings"
+      win=6
+      lose=8
+      runRate="-0.455"
+      points=$((win*MULTIPLY_BY_TWO))
+      echo "Indian Premier League $season"
+      echo "Team Name : $teamName"
+      echo "Match Played : $MATCH_PLAYED"
+      echo "Win : $win & Lose : $lose"
+      echo "NRR : $runRate"
+      echo "Points : $points"
+      ;;
+   $eightTeam)
+      teamName="Rajasthan Royals"
+      win=6
+      lose=8
+      runRate="-0.569"
+      points=$((win*MULTIPLY_BY_TWO))
+      echo "Indian Premier League $season"
+      echo "Team Name : $teamName"
+      echo "Match Played : $MATCH_PLAYED"
+      echo "Win : $win & Lose : $lose"
+      echo "NRR : $runRate"
+      echo "Points : $points"
+      ;;
+   *)
+     echo "Something Went Wrong :( "
+     ;;
+esac
