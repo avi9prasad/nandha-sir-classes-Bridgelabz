@@ -1,0 +1,7 @@
+#!/bin/bash -x
+for (( a=0 ; a<3 ; a++ ))
+do
+read -p " Enter Here " value
+array[$a]=$value
+done
+echo "${array[@]}
